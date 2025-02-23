@@ -3,15 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Events\UserRegistered;
-use App\Mail\WelcomeMail;
 use App\Models\User;
-use App\Notifications\NewUserNofitication;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Notification;
 
 class UserController extends Controller
 {
